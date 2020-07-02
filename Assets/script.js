@@ -3,7 +3,6 @@
 // When the button is clicked, a password is generated
 var generateBtn = document.querySelector("#generate"); 
 
-
 // Character type variables
 var number = "0123456789";
 var specialChar = "!#$%&,*+-./:;=<>?@~";
@@ -59,7 +58,7 @@ return randomPassword (confirmLength, char);
 
 } 
 
-
+// Password is generated
 function randomPassword (confirmLength, char){
   var password = "";
   for (i = 0; i < confirmLength; i++) {
@@ -68,7 +67,6 @@ function randomPassword (confirmLength, char){
   return password;
 
 }
-// Validating prompt input
 
 // Write password to the page
 function writePassword() {
@@ -81,7 +79,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Password is generated
+
 
 
 
